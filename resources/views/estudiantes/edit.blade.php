@@ -52,7 +52,7 @@
                 <div class="col-sm-5">
                     <select multiple name="cursos[]" id="cursos" class="form-select" required>                        
                         @foreach($cursos as $curso)
-                        <option value="{{ $curso->id }}" @if ($curso->id == $cursos_estudiantes->curso_id) {{'selected'}} @endif>{{ $curso->nombre }}</option>
+                        <option value="{{ $curso->id }}">{{ $curso->nombre }}</option>
                         @endforeach
                     </select>
                 </div>
